@@ -1,0 +1,48 @@
+name: Funcionalidade
+description: Proposta de nova funcionalidade ou melhoria
+title: "feat: "
+labels: ["feature"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options:
+        - web (front-end)
+        - api (back-end)
+        - design e acessibilidade
+        - docs
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema ou necessidade
+      description: Quem precisa disso e por quê.
+    validations:
+      required: true
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Proposta
+      description: Como você imagina a solução.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de aceite
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: acessibilidade
+    attributes:
+      label: Impacto em acessibilidade
+      description: Teclado, leitor de tela, contraste, carga cognitiva (TEA, dislexia).
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas consideradas

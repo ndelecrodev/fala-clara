@@ -23,3 +23,7 @@ web/coverage/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Claude Code: configuração local, nunca versionada
+.claude/
+CLAUDE.local.md

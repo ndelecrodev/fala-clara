@@ -81,6 +81,12 @@ Regras:
 - Dados de pessoas são sensíveis (LGPD): não registre texto ditado em logs.
 - Antes de abrir PR: rode lint e testes de `web/` e `api/` no que foi alterado.
 
+## Configuração do Claude Code (`.claude/`)
+
+- `.claude/settings.json` (versionado): atribuição vazia em commits e PRs, permissões (nega `push --force`, push direto em `main` e `develop`, `--no-verify`, troca de identidade do Git e leitura de `.env`) e o hook `bloquear-coautoria.sh`, que impede commits, tags e PRs com coautoria de IA.
+- `.claude/commands/`: `/nova-branch`, `/commit`, `/abrir-pr` e `/release`, que aplicam as regras deste arquivo.
+- Ajustes pessoais ficam em `.claude/settings.local.json` e `CLAUDE.local.md`, ignorados pelo Git.
+
 ## Gestão
 
 Tarefas no ClickUp (Space *Fala Clara*, listas Web, API, Design e Acessibilidade, Docs e Gestão). Mova o card conforme o andamento: Backlog, A fazer, Em andamento, Em revisão, Em teste, Concluído.

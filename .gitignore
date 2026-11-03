@@ -23,3 +23,8 @@ web/coverage/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Claude Code (configuração local fica fora do Git; .claude/settings.json é versionado)
+.claude/settings.local.json
+.claude/worktrees/
+CLAUDE.local.md

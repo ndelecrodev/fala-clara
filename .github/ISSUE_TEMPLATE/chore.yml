@@ -1,0 +1,42 @@
+name: Tarefa técnica
+description: Configuração, dependências, refatoração, CI ou documentação
+title: "chore: "
+labels: ["chore"]
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - chore
+        - refactor
+        - docs
+        - test
+        - ci
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options:
+        - web (front-end)
+        - api (back-end)
+        - docs
+        - repositório
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que precisa ser feito e por quê
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de aceite
+      placeholder: |
+        - [ ] ...
+    validations:
+      required: true

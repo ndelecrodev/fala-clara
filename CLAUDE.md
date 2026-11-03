@@ -15,6 +15,7 @@ Monorepo com `web/` (React, TypeScript, Vite, Tailwind), `api/` (Python, FastAPI
 3. **Nunca faça commit direto na `main` nem na `develop`.** Todo trabalho acontece em uma branch própria e entra por Pull Request.
 4. **Nunca versione segredos.** `.env` fica fora do Git; só o `.env.example` é versionado.
 5. **Nada de `--no-verify`, `push --force` em branch compartilhada ou reescrita de histórico já publicado.**
+6. **A pasta `.claude/` e o `CLAUDE.local.md` nunca vão para o repositório.** Eles ficam no `.gitignore` e existem só na máquina de quem usa. Não use `git add -f` nesses caminhos.
 
 ## Fluxo de branches
 

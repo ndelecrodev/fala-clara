@@ -1,0 +1,25 @@
+# Python
+api/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node
+web/node_modules/
+web/dist/
+web/coverage/
+
+# Segredos e dados locais
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite3
+
+# Editor e sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

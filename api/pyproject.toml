@@ -1,0 +1,39 @@
+[project]
+name = "fala-clara-api"
+version = "0.1.0"
+description = "API do Fala Clara: ditado por voz acessível com texto organizado e leitura em voz alta."
+readme = "README.md"
+authors = [
+    { name = "Nicolas Delecrode", email = "nicolas17delecrodepf@gmail.com" },
+    { name = "Yuji Brito", email = "miguel.yuji2011@gmail.com" },
+]
+requires-python = ">=3.14"
+dependencies = [
+    "alembic>=1.20.1",
+    "argon2-cffi>=25.1.0",
+    "fastapi[standard]>=0.162.0",
+    "pydantic-settings>=2.16.2",
+    "pyjwt>=2.15.1",
+    "sqlalchemy>=2.1.7",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.3",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

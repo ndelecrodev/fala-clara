@@ -147,7 +147,6 @@ fala-clara/
 ├── api/        Back-end (Python + FastAPI, gerenciado com uv)
 ├── docs/       Documentação do projeto
 ├── .github/    Templates de PR e issues, e workflows de CI
-├── CLAUDE.md   Regras de trabalho para assistentes de código
 ├── LICENSE
 └── README.md
 ```

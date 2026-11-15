@@ -27,3 +27,4 @@ Thumbs.db
 # Claude Code: configuração local, nunca versionada
 .claude/
 CLAUDE.local.md
+CLAUDE.md
